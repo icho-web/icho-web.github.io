@@ -7,9 +7,9 @@
   var DESKTOP_SLIDER_COUNT = 4;
   var TABLET_SLIDER_COUNT = 2;
   var MOBILE_SLIDER_COUNT = 1;
-  var buttonLeft = document.querySelector('.coaches__button--left');
-  var buttonRight = document.querySelector('.coaches__button--right');
-  var slides = document.querySelectorAll('.coaches__slider-item');
+  var buttonLeft = document.querySelector(".coaches__button--left");
+  var buttonRight = document.querySelector(".coaches__button--right");
+  var slides = document.querySelectorAll(".coaches__slider-item");
   var slideIndex;
   var slideLength;
   var summand;
@@ -21,8 +21,8 @@
   var sliderPagination = function sliderPagination(cond, exp) {
     if (cond) {
       for (var i = slideIndex; i < slideLength; i++) {
-        slides[i].classList.remove('coaches__slider-item--active');
-        slides[i + exp].classList.add('coaches__slider-item--active');
+        slides[i].classList.remove("coaches__slider-item--active");
+        slides[i + exp].classList.add("coaches__slider-item--active");
       }
 
       slideLength = slideLength + exp;
@@ -59,11 +59,11 @@
     slideIndex = 0;
 
     for (var l = 0; l < slides.length; l++) {
-      slides[l].classList.remove('coaches__slider-item--active');
+      slides[l].classList.remove("coaches__slider-item--active");
     }
 
     for (var j = 0; j < slideLength; j++) {
-      slides[j].classList.add('coaches__slider-item--active');
+      slides[j].classList.add("coaches__slider-item--active");
     }
 
     buttonLeft.disabled = true;
@@ -74,15 +74,15 @@
 
   window.setCursor = function (button) {
     if (button.disabled === true) {
-      button.style.cursor = 'not-allowed';
+      button.style.cursor = "not-allowed";
     } else {
-      button.style.cursor = 'pointer';
+      button.style.cursor = "pointer";
     }
   };
 
   slideCount();
-  window.addEventListener('resize', slideCount);
-  buttonRight.addEventListener('click', function () {
+  window.addEventListener("resize", slideCount);
+  buttonRight.addEventListener("click", function () {
     if (slides.length - slideLength >= summandUpdate()) {
       sliderPagination(slideLength < slides.length, +summand);
       buttonLeft.disabled = false;
@@ -99,7 +99,7 @@
       window.setCursor(buttonRight);
     }
   });
-  buttonLeft.addEventListener('click', function () {
+  buttonLeft.addEventListener("click", function () {
     if (summand < summandUpdate()) {
       sliderPagination(slideIndex > 0, -summand);
       summand = summandUpdate();
@@ -119,9 +119,9 @@
 })();
 
 (function () {
-  var buttonLeft = document.querySelector('.reviews__button--left');
-  var buttonRight = document.querySelector('.reviews__button--right');
-  var slides = document.querySelectorAll('.reviews__slide');
+  var buttonLeft = document.querySelector(".reviews__button--left");
+  var buttonRight = document.querySelector(".reviews__button--right");
+  var slides = document.querySelectorAll(".reviews__slide");
   var slideIndex;
   var slideLength;
   var summand = 1;
@@ -129,8 +129,8 @@
   var sliderPagination = function sliderPagination(cond, exp) {
     if (cond) {
       for (var i = slideIndex; i < slideLength; i++) {
-        slides[i].classList.remove('reviews__slide--active');
-        slides[i + exp].classList.add('reviews__slide--active');
+        slides[i].classList.remove("reviews__slide--active");
+        slides[i + exp].classList.add("reviews__slide--active");
       }
 
       slideLength = slideLength + exp;
@@ -143,11 +143,11 @@
     slideLength = 1;
 
     for (var l = 0; l < slides.length; l++) {
-      slides[l].classList.remove('reviews__slide--active');
+      slides[l].classList.remove("reviews__slide--active");
     }
 
     for (var j = 0; j < slideLength; j++) {
-      slides[j].classList.add('reviews__slide--active');
+      slides[j].classList.add("reviews__slide--active");
     }
 
     buttonRight.disabled = false;
@@ -157,67 +157,74 @@
   };
 
   slideCount();
-  window.addEventListener('resize', slideCount);
-  buttonRight.addEventListener('click', function (evt) {
+  window.addEventListener("resize", slideCount);
+  buttonRight.addEventListener("click", function () {
     if (slides.length > slideLength) {
       sliderPagination(true, summand);
       buttonLeft.disabled = false;
-      buttonLeft.style.cursor = 'pointer';
+      buttonLeft.style.cursor = "pointer";
     }
 
     if (slides.length === slideLength) {
       buttonRight.disabled = true;
-      buttonRight.style.cursor = 'not-allowed';
+      buttonRight.style.cursor = "not-allowed";
     }
   });
-  buttonLeft.addEventListener('click', function () {
+  buttonLeft.addEventListener("click", function () {
     if (slideIndex > 0) {
       sliderPagination(true, -summand);
       buttonRight.disabled = false;
-      buttonRight.style.cursor = 'pointer';
+      buttonRight.style.cursor = "pointer";
     }
 
     if (slideIndex === 0) {
       buttonLeft.disabled = true;
-      buttonLeft.style.cursor = 'not-allowed';
+      buttonLeft.style.cursor = "not-allowed";
     }
   });
 })();
 
-var inputs = document.querySelectorAll('.season__button input');
-var tabs = document.querySelectorAll('.season__tab');
-inputs.forEach(function (element, i) {
-  element.addEventListener('change', function () {
-    tabs.forEach(function (element) {
-      element.classList.remove('season__tab--open');
-    });
+(function () {
+  var inputs = document.querySelectorAll(".season__button input");
+  var tabs = document.querySelectorAll(".season__tab");
+  inputs.forEach(function (element, i) {
+    element.addEventListener("change", function () {
+      for (var j = 0; j < tabs.length; j++) {
+        tabs[j].classList.remove("season__tab--open");
+      }
 
-    if (element.checked) {
-      tabs[i].classList.add('season__tab--open');
+      if (element.checked) {
+        tabs[i].classList.add("season__tab--open");
+      }
+    });
+  });
+})();
+
+(function () {
+  var NUMBER_LENGTH = 11;
+  var REGEX_NAME = /^[A-ZА-Я][a-za-я]+\s([A-ZА-Я][a-za-я]+\s[A-ZА-Я][a-za-я]+|[A-ZА-Я][a-za-я]+)/;
+  var form = document.querySelector(".contacts__form");
+  var inputTel = document.getElementById("tel");
+  var inputName = document.getElementById("name");
+  var maskOptions = {
+    mask: "0-000-000-00-00"
+  }; // Знаю, что не допускается, но тут никак иначе - это библиотека
+  // eslint-disable-next-line no-undef, new-cap
+
+  var mask = IMask(inputTel, maskOptions);
+  form.addEventListener("input", function (evt) {
+    if (mask.unmaskedValue.length < NUMBER_LENGTH) {
+      evt.preventDefault();
+      inputTel.setCustomValidity("\u041D\u043E\u043C\u0435\u0440 \u0434\u043E\u043B\u0436\u0435\u043D \u0441\u043E\u0434\u0435\u0440\u0436\u0430\u0442\u044C ".concat(NUMBER_LENGTH, " \u0446\u0438\u0444\u0440"));
+    } else {
+      inputTel.setCustomValidity("");
+    }
+
+    if (REGEX_NAME.test(inputName.value)) {
+      inputName.setCustomValidity("");
+    } else {
+      evt.preventDefault();
+      inputName.setCustomValidity("\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u043A\u043E\u0440\u0440\u0435\u043A\u0442\u043D\u043E\u0435 \u0438\u043C\u044F");
     }
   });
-});
-var NUMBER_LENGTH = 11;
-var REGEX_NAME = /^[A-ZА-Я][a-za-я]+\s([A-ZА-Я][a-za-я]+\s[A-ZА-Я][a-za-я]+|[A-ZА-Я][a-za-я]+)/;
-var form = document.querySelector('.contacts__form');
-var inputTel = document.getElementById('tel');
-var inputName = document.getElementById('name');
-var maskOptions = {
-  mask: '0-000-000-00-00'
-};
-var mask = IMask(inputTel, maskOptions);
-form.addEventListener('input', function (evt) {
-  if (mask.unmaskedValue.length < NUMBER_LENGTH) {
-    evt.preventDefault();
-    inputTel.setCustomValidity('Номер должен содержать ' + NUMBER_LENGTH + ' цифр');
-  } else {
-    inputTel.setCustomValidity('');
-  }
-
-  if (REGEX_NAME.test(inputName.value)) {
-    inputName.setCustomValidity('');
-  } else {
-    evt.preventDefault();
-    inputName.setCustomValidity('Введите корректное имя');
-  }
-});
+})();
