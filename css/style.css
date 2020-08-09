@@ -64,10 +64,10 @@ body {
   flex-direction: column;
   min-height: 100%; }
 
-main {
+.main-page {
   flex: 1 0 auto; }
 
-footer {
+.footer {
   flex: 0 0 auto; }
 
 .visually-hidden {
@@ -1330,11 +1330,11 @@ a {
   .advantages__item--350 p {
     padding: 0 15%; } }
 
-.actions .container {
+.promo-actions .container {
   padding-top: 77px;
   padding-bottom: 77px; }
 
-.actions h2 {
+.promo-actions h2 {
   font-family: "BebasNeue", Arial, sans-serif;
   font-size: 49px;
   line-height: 49px;
@@ -1343,10 +1343,10 @@ a {
   margin-bottom: 52px;
   text-align: center; }
 
-.actions__container {
+.promo-actions__container {
   display: flex; }
 
-.actions__year-wrapper {
+.promo-actions__year-wrapper {
   position: relative;
   margin-right: 3.4%;
   display: flex;
@@ -1355,21 +1355,21 @@ a {
   color: white;
   background-color: #ed0233; }
 
-.actions__text-wrapper {
+.promo-actions__text-wrapper {
   padding-left: 7.9%;
   padding-top: 6px;
   padding-bottom: 80px; }
-  .actions__text-wrapper p {
+  .promo-actions__text-wrapper p {
     padding-right: 15%;
     font-size: 18px;
     line-height: 140%; }
-  .actions__text-wrapper h3 {
+  .promo-actions__text-wrapper h3 {
     margin-top: 0;
     margin-bottom: -18px;
     font-weight: bold;
     font-size: 70px;
     line-height: 156%; }
-  .actions__text-wrapper a {
+  .promo-actions__text-wrapper a {
     position: absolute;
     bottom: 46px;
     left: 7.9%;
@@ -1382,28 +1382,28 @@ a {
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: white; }
-    .actions__text-wrapper a:hover {
+    .promo-actions__text-wrapper a:hover {
       opacity: 0.5; }
-    .actions__text-wrapper a:active {
+    .promo-actions__text-wrapper a:active {
       opacity: 0.2; }
-  .actions__text-wrapper .actions__year {
+  .promo-actions__text-wrapper .promo-actions__year {
     margin-bottom: -25px;
     font-weight: bold;
     font-size: 28px;
     line-height: 156%; }
 
-.actions__img {
+.promo-actions__img {
   display: none; }
-  .actions__img--desktop {
+  .promo-actions__img--desktop {
     display: block; }
 
-.actions__list {
+.promo-actions__list {
   flex-grow: 1;
   list-style: none;
   padding: 0;
   margin: 0; }
 
-.actions__item {
+.promo-actions__item {
   position: relative;
   min-height: 211px;
   padding-left: 5%;
@@ -1416,19 +1416,19 @@ a {
   border-style: solid;
   border-width: 7px;
   color: #102654; }
-  .actions__item:last-child {
+  .promo-actions__item:last-child {
     margin-bottom: 0;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); }
-  .actions__item h3 {
+  .promo-actions__item h3 {
     margin-top: 18px;
     margin-bottom: -13px;
     font-weight: bold;
     font-size: 26px;
     line-height: 150%; }
-  .actions__item p {
+  .promo-actions__item p {
     font-size: 16px;
     line-height: 140%; }
-  .actions__item a {
+  .promo-actions__item a {
     position: absolute;
     bottom: 30px;
     left: 5%;
@@ -1440,98 +1440,98 @@ a {
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: #102654; }
-    .actions__item a:hover {
+    .promo-actions__item a:hover {
       opacity: 0.5; }
-    .actions__item a:active {
+    .promo-actions__item a:active {
       opacity: 0.2; }
 
 @media (max-width: 1199.8px) {
-  .actions .container {
+  .promo-actions .container {
     padding-top: 64px;
     padding-bottom: 25px; }
-  .actions h2 {
+  .promo-actions h2 {
     font-family: "BebasNeue", Arial, sans-serif;
     font-size: 42px;
     line-height: 42px;
     letter-spacing: 0.03em;
     color: #102654;
     margin-bottom: 41px; }
-  .actions__container {
+  .promo-actions__container {
     flex-direction: column; }
-  .actions__year-wrapper {
+  .promo-actions__year-wrapper {
     width: 100%;
     justify-content: space-between;
     margin-bottom: 30px; }
-  .actions__text-wrapper {
+  .promo-actions__text-wrapper {
     padding-left: 6.6%; }
-    .actions__text-wrapper a {
+    .promo-actions__text-wrapper a {
       left: 6.6%; }
-  .actions__list {
+  .promo-actions__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; }
-  .actions__item {
+  .promo-actions__item {
     width: 47.8%;
     padding-left: 4%;
     padding-right: 4%; }
-    .actions__item:last-child {
+    .promo-actions__item:last-child {
       margin-bottom: 40px; }
-    .actions__item a {
+    .promo-actions__item a {
       left: 9%; }
-  .actions__referral {
+  .promo-actions__referral {
     padding-right: 15%; }
-  .actions__img--desktop {
+  .promo-actions__img--desktop {
     display: none; }
-  .actions__img--tablet {
+  .promo-actions__img--tablet {
     display: block; } }
 
 @media (max-width: 767.8px) {
-  .actions .container {
+  .promo-actions .container {
     padding-top: 42px;
     padding-bottom: 43px; }
-  .actions h2 {
+  .promo-actions h2 {
     font-family: "BebasNeue", Arial, sans-serif;
     font-size: 32px;
     line-height: 32px;
     letter-spacing: 0.03em;
     color: #102654;
     margin-bottom: 43px; }
-  .actions__year-wrapper {
+  .promo-actions__year-wrapper {
     flex-direction: column;
     height: auto; }
-  .actions__text-wrapper {
+  .promo-actions__text-wrapper {
     padding-left: 0;
     padding-bottom: 46px;
     text-align: center; }
-    .actions__text-wrapper p {
+    .promo-actions__text-wrapper p {
       padding: 0 17%; }
-    .actions__text-wrapper h3 {
+    .promo-actions__text-wrapper h3 {
       margin-bottom: -23px; }
-    .actions__text-wrapper a {
+    .promo-actions__text-wrapper a {
       margin-top: 31px;
       position: static;
       display: block; }
-  .actions__img--tablet {
+  .promo-actions__img--tablet {
     display: none; }
-  .actions__img--mobile {
+  .promo-actions__img--mobile {
     display: block; }
-    .actions__img--mobile img {
+    .promo-actions__img--mobile img {
       margin-bottom: -6px;
       width: 100%; }
-  .actions__list {
+  .promo-actions__list {
     flex-direction: column; }
-  .actions__item {
+  .promo-actions__item {
     width: 100%;
     padding-top: 11px;
     padding-bottom: 41px;
     margin-bottom: 30px;
     text-align: center; }
-    .actions__item:last-child {
+    .promo-actions__item:last-child {
       margin-bottom: 0; }
-    .actions__item p {
+    .promo-actions__item p {
       padding: 0 16%;
       margin-top: 17px; }
-    .actions__item a {
+    .promo-actions__item a {
       position: static;
       margin-top: 26px;
       display: block; } }
