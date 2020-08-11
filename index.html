@@ -11,6 +11,11 @@
     <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
     <link rel="preload" href="fonts/RobotoCondensed-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
     <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+    <link rel="preload" href="fonts/BebasNeueBold.woff" as="font" type="font/woff" crossorigin="anonymous"/>
+    <link rel="preload" href="fonts/BebasNeueRegular.woff" as="font" type="font/woff" crossorigin="anonymous"/>
+    <link rel="preload" href="fonts/RobotoCondensed-Bold.woff" as="font" type="font/woff" crossorigin="anonymous"/>
+    <link rel="preload" href="fonts/RobotoCondensed-Light.woff" as="font" type="font/woff" crossorigin="anonymous"/>
+    <link rel="preload" href="fonts/RobotoCondensed-Regular.woff" as="font" type="font/woff" crossorigin="anonymous"/>
   </head>
   <body>
     <div class="wrapper">
@@ -36,12 +41,12 @@
             </div>
             <div class="main__img main__img--desktop"><!-- 1х: 508px; 2x: 1016px -->
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/header-img-desktop.webp 1x, img/header-img-desktop@2x.webp 2x" type="image/webp"/><img src="img/header-img-desktop.png" srcset="img/header-img-desktop@2x.png 2x" width="508" height="564" alt="Фитнес центр"/>
+                <source media="(min-width: 1200px)" data-srcset="img/header-img-desktop.webp 1x, img/header-img-desktop@2x.webp 2x" type="image/webp"/><img class="lazyload" data-src="img/header-img-desktop.jpg" data-srcset="img/header-img-desktop@2x.jpg 2x" width="508" height="564" alt="Фитнес центр"/>
               </picture>
             </div>
             <div class="main__img main__img--tablet"><!-- 1х: 324px; 2x: 648px -->
               <picture>
-                <source media="(min-width: 320px)" srcset="img/header-img-tablet.webp 1x, img/header-img-tablet@2x.webp 2x" type="image/webp"/><img src="img/header-img-tablet.png" srcset="img/header-img-tablet@2x.png 2x" width="324" height="390" alt="Фитнес центр"/>
+                <source media="(min-width: 320px)" data-srcset="img/header-img-tablet.webp 1x, img/header-img-tablet@2x.webp 2x" type="image/webp"/><img class="lazyload" data-src="img/header-img-tablet.jpg" data-srcset="img/header-img-tablet@2x.jpg 2x" width="324" height="390" alt="Фитнес центр"/>
               </picture>
             </div>
             <ul class="main__socials">
@@ -62,37 +67,37 @@
               <div class="gym__gym-wrapper">
                 <div class="gym__img gym__img--desktop"><!-- 1х: 660px; 2x: 1320px -->
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="img/gum-desktop.webp 1x, img/gum-desktop@2x.webp 2x" type="image/webp"/><img src="img/gum-desktop.png" srcset="img/gum-desktop@2x.png 2x" width="660" height="401" alt="Тренажерный зал"/>
+                    <source media="(min-width: 1200px)" data-srcset="img/gum-desktop.webp 1x, img/gum-desktop@2x.webp 2x" type="image/webp"/><img class="lazyload" data-src="img/gum-desktop.jpg" data-srcset="img/gum-desktop@2x.jpg 2x" width="660" height="401" alt="Тренажерный зал"/>
                   </picture>
                 </div>
                 <div class="gym__img gym__img--tablet"><!-- 1х: 678px; 2x: 1356px -->
                   <picture>
-                    <source media="(min-width: 768px)" srcset="img/gum-tablet.webp 1x, img/gum-tablet@2x.webp 2x" type="image/webp"/><img src="img/gum-tablet.png" srcset="img/gum-tablet@2x.png 2x" width="678" height="345" alt="Тренажерный зал"/>
+                    <source media="(min-width: 768px)" data-srcset="img/gum-tablet.webp 1x, img/gum-tablet@2x.webp 2x" type="image/webp"/><img class="lazyload" data-src="img/gum-tablet.jpg" data-srcset="img/gum-tablet@2x.jpg 2x" width="678" height="345" alt="Тренажерный зал"/>
                   </picture>
                 </div>
                 <div class="gym__img gym__img--mobile"><!-- 1х: 320px; 2x: 640px -->
                   <picture>
-                    <source media="(min-width: 320px)" srcset="img/gum-mobile.webp 1x, img/gum-mobile@2x.webp 2x" type="image/webp"/><img src="img/gum-mobile.png" srcset="img/gum-mobile@2x.png 2x" width="320" height="313" alt="Тренажерный зал"/>
+                    <source media="(min-width: 320px)" data-srcset="img/gum-mobile.webp 1x, img/gum-mobile@2x.webp 2x" type="image/webp"/><img class="lazyload" data-src="img/gum-mobile.jpg" data-srcset="img/gum-mobile@2x.jpg 2x" width="320" height="313" alt="Тренажерный зал"/>
                   </picture>
                 </div>
               </div>
               <div class="gym__video">
                 <div class="gym__video-img gym__video-img--desktop"><!-- 1х: 364px; 2x: 728px -->
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="img/gum-video-desktop.webp 1x, img/gum-video-desktop@2x.webp 2x" type="image/webp"/><img src="img/gum-video-desktop.png" srcset="img/gum-video-desktop@2x.png 2x" width="364" height="228" alt="Видео тренажерного зала"/>
+                    <source media="(min-width: 1200px)" data-srcset="img/gum-video-desktop.webp 1x, img/gum-video-desktop@2x.webp 2x" type="image/webp"/><img class="lazyload" data-src="img/gum-video-desktop.jpg" data-srcset="img/gum-video-desktop@2x.jpg 2x" width="364" height="228" alt="Видео тренажерного зала"/>
                   </picture>
                 </div>
                 <div class="gym__video-img gym__video-img--tablet"><!-- 1х: 266px; 2x: 532px -->
                   <picture>
-                    <source media="(min-width: 768px)" srcset="img/gum-video-tablet.webp 1x, img/gum-video-tablet@2x.webp 2x" type="image/webp"/><img src="img/gum-video-tablet.png" srcset="img/gum-video-tablet@2x.png 2x" width="266" height="167" alt="Видео тренажерного зала"/>
+                    <source media="(min-width: 768px)" data-srcset="img/gum-video-tablet.webp 1x, img/gum-video-tablet@2x.webp 2x" type="image/webp"/><img class="lazyload" data-src="img/gum-video-tablet.jpg" data-srcset="img/gum-video-tablet@2x.jpg 2x" width="266" height="167" alt="Видео тренажерного зала"/>
                   </picture>
                 </div>
                 <div class="gym__video-img gym__video-img--mobile"><!-- 1х: 320px; 2x: 640px -->
                   <picture>
-                    <source media="(min-width: 320px)" srcset="img/gum-video-mobile.webp 1x, img/gum-video-mobile@2x.webp 2x" type="image/webp"/><img src="img/gum-video-mobile.png" srcset="img/gum-video-mobile@2x.png 2x" width="320" height="167" alt="Видео тренажерного зала"/>
+                    <source media="(min-width: 320px)" data-srcset="img/gum-video-mobile.webp 1x, img/gum-video-mobile@2x.webp 2x" type="image/webp"/><img class="lazyload" data-src="img/gum-video-mobile.jpg" data-srcset="img/gum-video-mobile@2x.jpg 2x" width="320" height="167" alt="Видео тренажерного зала"/>
                   </picture>
                 </div>
-                <button class="gym__play" type="button"><img src="img/play.png" width="73" height="73" alt="Запустить видео"/></button>
+                <button class="gym__play" type="button"><img class="lazyload" data-src="img/play.png" width="73" height="73" alt="Запустить видео"/></button>
               </div>
             </div>
           </div>
@@ -100,12 +105,12 @@
         <section class="season">
           <div class="season__barbells season__barbells--desktop">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/barbells-desktop.webp 1x, img/barbells-desktop@2x.webp 2x" type="image/webp"/><img src="img/barbells-desktop.png" srcset="img/barbells-desktop@2x.png 2x" width="287" height="494" alt="Блины для штанги"/>
+              <source media="(min-width: 1200px)" data-srcset="img/barbells-desktop.webp 1x, img/barbells-desktop@2x.webp 2x" type="image/webp"/><img class="lazyload" data-src="img/barbells-desktop.png" data-srcset="img/barbells-desktop@2x.png 2x" width="287" height="494" alt="Блины для штанги"/>
             </picture>
           </div>
           <div class="season__barbells season__barbells--tablet">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/barbells-tablet.webp 1x, img/barbells-tablet@2x.webp 2x" type="image/webp"/><img src="img/barbells-tablet.png" srcset="img/barbells-tablet@2x.png 2x" width="347" height="444" alt="Блины для штанги"/>
+              <source media="(min-width: 1200px)" data-srcset="img/barbells-tablet.webp 1x, img/barbells-tablet@2x.webp 2x" type="image/webp"/><img class="lazyload" data-src="img/barbells-tablet.png" data-srcset="img/barbells-tablet@2x.png 2x" width="347" height="444" alt="Блины для штанги"/>
             </picture>
           </div>
           <div class="container">
@@ -218,17 +223,17 @@
             </div>
             <div class="promo__img promo__img--desktop"><!-- 1х: 660px; 2x: 1320px -->
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/promo-img-desktop.webp 1x, img/promo-img-desktop@2x.webp 2x" type="image/webp"/><img src="img/promo-img-desktop.png" srcset="img/promo-img-desktop@2x.png 2x" width="660" height="500" alt="Промо Super Games"/>
+                <source media="(min-width: 1200px)" data-srcset="img/promo-img-desktop.webp 1x, img/promo-img-desktop@2x.webp 2x" type="image/webp"/><img class="lazyload" data-src="img/promo-img-desktop.jpg" data-srcset="img/promo-img-desktop@2x.jpg 2x" width="660" height="500" alt="Промо Super Games"/>
               </picture>
             </div>
             <div class="promo__img promo__img--tablet"><!-- 1х: 386px; 2x: 772px -->
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/promo-img-tablet.webp 1x, img/promo-img-tablet@2x.webp 2x" type="image/webp"/><img src="img/promo-img-tablet.png" srcset="img/promo-img-tablet@2x.png 2x" width="386" height="292" alt="Промо Super Games"/>
+                <source media="(min-width: 1200px)" data-srcset="img/promo-img-tablet.webp 1x, img/promo-img-tablet@2x.webp 2x" type="image/webp"/><img class="lazyload" data-src="img/promo-img-tablet.jpg" data-srcset="img/promo-img-tablet@2x.jpg 2x" width="386" height="292" alt="Промо Super Games"/>
               </picture>
             </div>
             <div class="promo__img promo__img--mobile"><!-- 1х: 290px; 2x: 580px -->
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/promo-img-mobile.webp 1x, img/promo-img-mobile@2x.webp 2x" type="image/webp"/><img src="img/promo-img-mobile.png" srcset="img/promo-img-mobile@2x.png 2x" width="290" height="292" alt="Промо Super Games"/>
+                <source media="(min-width: 1200px)" data-srcset="img/promo-img-mobile.webp 1x, img/promo-img-mobile@2x.webp 2x" type="image/webp"/><img class="lazyload" data-src="img/promo-img-mobile.jpg" data-srcset="img/promo-img-mobile@2x.jpg 2x" width="290" height="292" alt="Промо Super Games"/>
               </picture>
             </div>
           </div>
@@ -242,17 +247,17 @@
               <li class="coaches__slider-item">
                 <div class="coaches__img-wrapper coaches__img-wrapper--desktop"><!-- 1х: 260px; 2x: 520px -->
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="img/coach-1-desktop.webp 1x, img/coach-1-desktop@2x.webp 2x" type="image/webp"/><img src="img/coach-1-desktop.png" srcset="img/coach-1-desktop@2x.png 2x" width="260" height="294" alt="Анна Павлова"/>
+                    <source media="(min-width: 1200px)" data-srcset="img/coach-1-desktop.webp 1x, img/coach-1-desktop@2x.webp 2x" type="image/webp"/><img class="lazyload" data-src="img/coach-1-desktop.jpg" data-srcset="img/coach-1-desktop@2x.jpg 2x" width="260" height="294" alt="Анна Павлова"/>
                   </picture>
                 </div>
                 <div class="coaches__img-wrapper coaches__img-wrapper--tablet"><!-- 1х: 268px; 2x: 536px -->
                   <picture>
-                    <source media="(min-width: 768px)" srcset="img/coach-1-tablet.webp 1x, img/coach-1-tablet@2x.webp 2x" type="image/webp"/><img src="img/coach-1-tablet.png" srcset="img/coach-1-tablet@2x.png 2x" width="268" height="294" alt="Анна Павлова"/>
+                    <source media="(min-width: 768px)" data-srcset="img/coach-1-tablet.webp 1x, img/coach-1-tablet@2x.webp 2x" type="image/webp"/><img class="lazyload" data-src="img/coach-1-tablet.jpg" data-srcset="img/coach-1-tablet@2x.jpg 2x" width="268" height="294" alt="Анна Павлова"/>
                   </picture>
                 </div>
                 <div class="coaches__img-wrapper coaches__img-wrapper--mobile"><!-- 1х: 226px; 2x: 452px -->
                   <picture>
-                    <source media="(min-width: 320px)" srcset="img/coach-1-mobile.webp 1x, img/coach-1-mobile@2x.webp 2x" type="image/webp"/><img src="img/coach-1-mobile.png" srcset="img/coach-1-mobile@2x.png 2x" width="226" height="274" alt="Анна Павлова"/>
+                    <source media="(min-width: 320px)" data-srcset="img/coach-1-mobile.webp 1x, img/coach-1-mobile@2x.webp 2x" type="image/webp"/><img class="lazyload" data-src="img/coach-1-mobile.jpg" data-srcset="img/coach-1-mobile@2x.jpg 2x" width="226" height="274" alt="Анна Павлова"/>
                   </picture>
                 </div>
                 <h3 class="coaches__h3">Анна Павлова</h3>
@@ -269,17 +274,17 @@
               <li class="coaches__slider-item">
                 <div class="coaches__img-wrapper coaches__img-wrapper--desktop"><!-- 1х: 260px; 2x: 520px -->
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="img/coach-2-desktop.webp 1x, img/coach-2-desktop@2x.webp 2x" type="image/webp"/><img src="img/coach-2-desktop.png" srcset="img/coach-2-desktop@2x.png 2x" width="260" height="294" alt="Алексей Лавров"/>
+                    <source media="(min-width: 1200px)" data-srcset="img/coach-2-desktop.webp 1x, img/coach-2-desktop@2x.webp 2x" type="image/webp"/><img class="lazyload" data-src="img/coach-2-desktop.jpg" data-srcset="img/coach-2-desktop@2x.jpg 2x" width="260" height="294" alt="Алексей Лавров"/>
                   </picture>
                 </div>
                 <div class="coaches__img-wrapper coaches__img-wrapper--tablet"><!-- 1х: 268px; 2x: 536px -->
                   <picture>
-                    <source media="(min-width: 768px)" srcset="img/coach-2-tablet.webp 1x, img/coach-2-tablet@2x.webp 2x" type="image/webp"/><img src="img/coach-2-tablet.png" srcset="img/coach-2-tablet@2x.png 2x" width="268" height="294" alt="Алексей Лавров"/>
+                    <source media="(min-width: 768px)" data-srcset="img/coach-2-tablet.webp 1x, img/coach-2-tablet@2x.webp 2x" type="image/webp"/><img class="lazyload" data-src="img/coach-2-tablet.jpg" data-srcset="img/coach-2-tablet@2x.jpg 2x" width="268" height="294" alt="Алексей Лавров"/>
                   </picture>
                 </div>
                 <div class="coaches__img-wrapper coaches__img-wrapper--mobile"><!-- 1х: 226px; 2x: 452px -->
                   <picture>
-                    <source media="(min-width: 320px)" srcset="img/coach-2-mobile.webp 1x, img/coach-2-mobile@2x.webp 2x" type="image/webp"/><img src="img/coach-2-mobile.png" srcset="img/coach-2-mobile@2x.png 2x" width="226" height="274" alt="Алексей Лавров"/>
+                    <source media="(min-width: 320px)" data-srcset="img/coach-2-mobile.webp 1x, img/coach-2-mobile@2x.webp 2x" type="image/webp"/><img class="lazyload" data-src="img/coach-2-mobile.jpg" data-srcset="img/coach-2-mobile@2x.jpg 2x" width="226" height="274" alt="Алексей Лавров"/>
                   </picture>
                 </div>
                 <h3 class="coaches__h3">Алексей Лавров</h3>
@@ -296,17 +301,17 @@
               <li class="coaches__slider-item">
                 <div class="coaches__img-wrapper coaches__img-wrapper--desktop"><!-- 1х: 260px; 2x: 520px -->
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="img/coach-3-desktop.webp 1x, img/coach-3-desktop@2x.webp 2x" type="image/webp"/><img src="img/coach-3-desktop.png" srcset="img/coach-3-desktop@2x.png 2x" width="260" height="294" alt="Александр Пашков"/>
+                    <source media="(min-width: 1200px)" data-srcset="img/coach-3-desktop.webp 1x, img/coach-3-desktop@2x.webp 2x" type="image/webp"/><img class="lazyload" data-src="img/coach-3-desktop.jpg" data-srcset="img/coach-3-desktop@2x.jpg 2x" width="260" height="294" alt="Александр Пашков"/>
                   </picture>
                 </div>
                 <div class="coaches__img-wrapper coaches__img-wrapper--tablet"><!-- 1х: 268px; 2x: 536px -->
                   <picture>
-                    <source media="(min-width: 768px)" srcset="img/coach-3-tablet.webp 1x, img/coach-3-tablet@2x.webp 2x" type="image/webp"/><img src="img/coach-3-tablet.png" srcset="img/coach-3-tablet@2x.png 2x" width="268" height="294" alt="Александр Пашков"/>
+                    <source media="(min-width: 768px)" data-srcset="img/coach-3-tablet.webp 1x, img/coach-3-tablet@2x.webp 2x" type="image/webp"/><img class="lazyload" data-src="img/coach-3-tablet.jpg" data-srcset="img/coach-3-tablet@2x.jpg 2x" width="268" height="294" alt="Александр Пашков"/>
                   </picture>
                 </div>
                 <div class="coaches__img-wrapper coaches__img-wrapper--mobile"><!-- 1х: 226px; 2x: 452px -->
                   <picture>
-                    <source media="(min-width: 320px)" srcset="img/coach-3-mobile.webp 1x, img/coach-3-mobile@2x.webp 2x" type="image/webp"/><img src="img/coach-3-mobile.png" srcset="img/coach-3-mobile@2x.png 2x" width="226" height="274" alt="Александр Пашков"/>
+                    <source media="(min-width: 320px)" data-srcset="img/coach-3-mobile.webp 1x, img/coach-3-mobile@2x.webp 2x" type="image/webp"/><img class="lazyload" data-src="img/coach-3-mobile.jpg" data-srcset="img/coach-3-mobile@2x.jpg 2x" width="226" height="274" alt="Александр Пашков"/>
                   </picture>
                 </div>
                 <h3 class="coaches__h3">Александр Пашков</h3>
@@ -323,17 +328,17 @@
               <li class="coaches__slider-item">
                 <div class="coaches__img-wrapper coaches__img-wrapper--desktop"><!-- 1х: 260px; 2x: 520px -->
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="img/coach-4-desktop.webp 1x, img/coach-4-desktop@2x.webp 2x" type="image/webp"/><img src="img/coach-4-desktop.png" srcset="img/coach-4-desktop@2x.png 2x" width="260" height="294" alt="Мария Кетова"/>
+                    <source media="(min-width: 1200px)" data-srcset="img/coach-4-desktop.webp 1x, img/coach-4-desktop@2x.webp 2x" type="image/webp"/><img class="lazyload" data-src="img/coach-4-desktop.jpg" data-srcset="img/coach-4-desktop@2x.jpg 2x" width="260" height="294" alt="Мария Кетова"/>
                   </picture>
                 </div>
                 <div class="coaches__img-wrapper coaches__img-wrapper--tablet"><!-- 1х: 268px; 2x: 536px -->
                   <picture>
-                    <source media="(min-width: 768px)" srcset="img/coach-4-tablet.webp 1x, img/coach-4-tablet@2x.webp 2x" type="image/webp"/><img src="img/coach-4-tablet.png" srcset="img/coach-4-tablet@2x.png 2x" width="268" height="294" alt="Мария Кетова"/>
+                    <source media="(min-width: 768px)" data-srcset="img/coach-4-tablet.webp 1x, img/coach-4-tablet@2x.webp 2x" type="image/webp"/><img class="lazyload" data-src="img/coach-4-tablet.jpg" data-srcset="img/coach-4-tablet@2x.jpg 2x" width="268" height="294" alt="Мария Кетова"/>
                   </picture>
                 </div>
                 <div class="coaches__img-wrapper coaches__img-wrapper--mobile"><!-- 1х: 226px; 2x: 452px -->
                   <picture>
-                    <source media="(min-width: 320px)" srcset="img/coach-4-mobile.webp 1x, img/coach-4-mobile@2x.webp 2x" type="image/webp"/><img src="img/coach-4-mobile.png" srcset="img/coach-4-mobile@2x.png 2x" width="226" height="274" alt="Мария Кетова"/>
+                    <source media="(min-width: 320px)" data-srcset="img/coach-4-mobile.webp 1x, img/coach-4-mobile@2x.webp 2x" type="image/webp"/><img class="lazyload" data-src="img/coach-4-mobile.jpg" data-srcset="img/coach-4-mobile@2x.jpg 2x" width="226" height="274" alt="Мария Кетова"/>
                   </picture>
                 </div>
                 <h3 class="coaches__h3">Мария Кетова</h3>
@@ -350,17 +355,17 @@
               <li class="coaches__slider-item">
                 <div class="coaches__img-wrapper coaches__img-wrapper--desktop"><!-- 1х: 260px; 2x: 520px -->
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="img/coach-2-desktop.webp 1x, img/coach-2-desktop@2x.webp 2x" type="image/webp"/><img src="img/coach-2-desktop.png" srcset="img/coach-2-desktop@2x.png 2x" width="260" height="294" alt="Анна Павлова"/>
+                    <source media="(min-width: 1200px)" data-srcset="img/coach-2-desktop.webp 1x, img/coach-2-desktop@2x.webp 2x" type="image/webp"/><img class="lazyload" data-src="img/coach-2-desktop.jpg" data-srcset="img/coach-2-desktop@2x.jpg 2x" width="260" height="294" alt="Анна Павлова"/>
                   </picture>
                 </div>
                 <div class="coaches__img-wrapper coaches__img-wrapper--tablet"><!-- 1х: 268px; 2x: 536px -->
                   <picture>
-                    <source media="(min-width: 768px)" srcset="img/coach-2-tablet.webp 1x, img/coach-2-tablet@2x.webp 2x" type="image/webp"/><img src="img/coach-2-tablet.png" srcset="img/coach-2-tablet@2x.png 2x" width="268" height="294" alt="Анна Павлова"/>
+                    <source media="(min-width: 768px)" data-srcset="img/coach-2-tablet.webp 1x, img/coach-2-tablet@2x.webp 2x" type="image/webp"/><img class="lazyload" data-src="img/coach-2-tablet.jpg" data-srcset="img/coach-2-tablet@2x.jpg 2x" width="268" height="294" alt="Анна Павлова"/>
                   </picture>
                 </div>
                 <div class="coaches__img-wrapper coaches__img-wrapper--mobile"><!-- 1х: 226px; 2x: 452px -->
                   <picture>
-                    <source media="(min-width: 320px)" srcset="img/coach-2-mobile.webp 1x, img/coach-2-mobile@2x.webp 2x" type="image/webp"/><img src="img/coach-2-mobile.png" srcset="img/coach-2-mobile@2x.png 2x" width="226" height="274" alt="Анна Павлова"/>
+                    <source media="(min-width: 320px)" data-srcset="img/coach-2-mobile.webp 1x, img/coach-2-mobile@2x.webp 2x" type="image/webp"/><img class="lazyload" data-src="img/coach-2-mobile.jpg" data-srcset="img/coach-2-mobile@2x.jpg 2x" width="226" height="274" alt="Анна Павлова"/>
                   </picture>
                 </div>
                 <h3 class="coaches__h3">Анна Павлова</h3>
@@ -377,17 +382,17 @@
               <li class="coaches__slider-item">
                 <div class="coaches__img-wrapper coaches__img-wrapper--desktop"><!-- 1х: 260px; 2x: 520px -->
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="img/coach-3-desktop.webp 1x, img/coach-3-desktop@2x.webp 2x" type="image/webp"/><img src="img/coach-3-desktop.png" srcset="img/coach-3-desktop@2x.png 2x" width="260" height="294" alt="Алексей Лавров"/>
+                    <source media="(min-width: 1200px)" data-srcset="img/coach-3-desktop.webp 1x, img/coach-3-desktop@2x.webp 2x" type="image/webp"/><img class="lazyload" data-src="img/coach-3-desktop.jpg" data-srcset="img/coach-3-desktop@2x.jpg 2x" width="260" height="294" alt="Алексей Лавров"/>
                   </picture>
                 </div>
                 <div class="coaches__img-wrapper coaches__img-wrapper--tablet"><!-- 1х: 268px; 2x: 536px -->
                   <picture>
-                    <source media="(min-width: 768px)" srcset="img/coach-3-tablet.webp 1x, img/coach-3-tablet@2x.webp 2x" type="image/webp"/><img src="img/coach-3-tablet.png" srcset="img/coach-3-tablet@2x.png 2x" width="268" height="294" alt="Алексей Лавров"/>
+                    <source media="(min-width: 768px)" data-srcset="img/coach-3-tablet.webp 1x, img/coach-3-tablet@2x.webp 2x" type="image/webp"/><img class="lazyload" data-src="img/coach-3-tablet.jpg" data-srcset="img/coach-3-tablet@2x.jpg 2x" width="268" height="294" alt="Алексей Лавров"/>
                   </picture>
                 </div>
                 <div class="coaches__img-wrapper coaches__img-wrapper--mobile"><!-- 1х: 226px; 2x: 452px -->
                   <picture>
-                    <source media="(min-width: 320px)" srcset="img/coach-3-mobile.webp 1x, img/coach-3-mobile@2x.webp 2x" type="image/webp"/><img src="img/coach-3-mobile.png" srcset="img/coach-3-mobile@2x.png 2x" width="226" height="274" alt="Алексей Лавров"/>
+                    <source media="(min-width: 320px)" data-srcset="img/coach-3-mobile.webp 1x, img/coach-3-mobile@2x.webp 2x" type="image/webp"/><img class="lazyload" data-src="img/coach-3-mobile.jpg" data-srcset="img/coach-3-mobile@2x.jpg 2x" width="226" height="274" alt="Алексей Лавров"/>
                   </picture>
                 </div>
                 <h3 class="coaches__h3">Алексей Лавров</h3>
@@ -404,17 +409,17 @@
               <li class="coaches__slider-item">
                 <div class="coaches__img-wrapper coaches__img-wrapper--desktop"><!-- 1х: 260px; 2x: 520px -->
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="img/coach-4-desktop.webp 1x, img/coach-4-desktop@2x.webp 2x" type="image/webp"/><img src="img/coach-4-desktop.png" srcset="img/coach-4-desktop@2x.png 2x" width="260" height="294" alt="Александр Пашков"/>
+                    <source media="(min-width: 1200px)" data-srcset="img/coach-4-desktop.webp 1x, img/coach-4-desktop@2x.webp 2x" type="image/webp"/><img class="lazyload" data-src="img/coach-4-desktop.jpg" data-srcset="img/coach-4-desktop@2x.jpg 2x" width="260" height="294" alt="Александр Пашков"/>
                   </picture>
                 </div>
                 <div class="coaches__img-wrapper coaches__img-wrapper--tablet"><!-- 1х: 268px; 2x: 536px -->
                   <picture>
-                    <source media="(min-width: 768px)" srcset="img/coach-4-tablet.webp 1x, img/coach-4-tablet@2x.webp 2x" type="image/webp"/><img src="img/coach-4-tablet.png" srcset="img/coach-4-tablet@2x.png 2x" width="268" height="294" alt="Александр Пашков"/>
+                    <source media="(min-width: 768px)" data-srcset="img/coach-4-tablet.webp 1x, img/coach-4-tablet@2x.webp 2x" type="image/webp"/><img class="lazyload" data-src="img/coach-4-tablet.jpg" data-srcset="img/coach-4-tablet@2x.jpg 2x" width="268" height="294" alt="Александр Пашков"/>
                   </picture>
                 </div>
                 <div class="coaches__img-wrapper coaches__img-wrapper--mobile"><!-- 1х: 226px; 2x: 452px -->
                   <picture>
-                    <source media="(min-width: 320px)" srcset="img/coach-4-mobile.webp 1x, img/coach-4-mobile@2x.webp 2x" type="image/webp"/><img src="img/coach-4-mobile.png" srcset="img/coach-4-mobile@2x.png 2x" width="226" height="274" alt="Александр Пашков"/>
+                    <source media="(min-width: 320px)" data-srcset="img/coach-4-mobile.webp 1x, img/coach-4-mobile@2x.webp 2x" type="image/webp"/><img class="lazyload" data-src="img/coach-4-mobile.jpg" data-srcset="img/coach-4-mobile@2x.jpg 2x" width="226" height="274" alt="Александр Пашков"/>
                   </picture>
                 </div>
                 <h3 class="coaches__h3">Александр Пашков</h3>
@@ -431,17 +436,17 @@
               <li class="coaches__slider-item">
                 <div class="coaches__img-wrapper coaches__img-wrapper--desktop"><!-- 1х: 260px; 2x: 520px -->
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="img/coach-1-desktop.webp 1x, img/coach-1-desktop@2x.webp 2x" type="image/webp"/><img src="img/coach-1-desktop.png" srcset="img/coach-1-desktop@2x.png 2x" width="260" height="294" alt="Мария Кетова"/>
+                    <source media="(min-width: 1200px)" data-srcset="img/coach-1-desktop.webp 1x, img/coach-1-desktop@2x.webp 2x" type="image/webp"/><img class="lazyload" data-src="img/coach-1-desktop.jpg" data-srcset="img/coach-1-desktop@2x.jpg 2x" width="260" height="294" alt="Мария Кетова"/>
                   </picture>
                 </div>
                 <div class="coaches__img-wrapper coaches__img-wrapper--tablet"><!-- 1х: 268px; 2x: 536px -->
                   <picture>
-                    <source media="(min-width: 768px)" srcset="img/coach-1-tablet.webp 1x, img/coach-1-tablet@2x.webp 2x" type="image/webp"/><img src="img/coach-1-tablet.png" srcset="img/coach-1-tablet@2x.png 2x" width="268" height="294" alt="Мария Кетова"/>
+                    <source media="(min-width: 768px)" data-srcset="img/coach-1-tablet.webp 1x, img/coach-1-tablet@2x.webp 2x" type="image/webp"/><img class="lazyload" data-src="img/coach-1-tablet.jpg" data-srcset="img/coach-1-tablet@2x.jpg 2x" width="268" height="294" alt="Мария Кетова"/>
                   </picture>
                 </div>
                 <div class="coaches__img-wrapper coaches__img-wrapper--mobile"><!-- 1х: 226px; 2x: 452px -->
                   <picture>
-                    <source media="(min-width: 320px)" srcset="img/coach-1-mobile.webp 1x, img/coach-1-mobile@2x.webp 2x" type="image/webp"/><img src="img/coach-1-mobile.png" srcset="img/coach-1-mobile@2x.png 2x" width="226" height="274" alt="Мария Кетова"/>
+                    <source media="(min-width: 320px)" data-srcset="img/coach-1-mobile.webp 1x, img/coach-1-mobile@2x.webp 2x" type="image/webp"/><img class="lazyload" data-src="img/coach-1-mobile.jpg" data-srcset="img/coach-1-mobile@2x.jpg 2x" width="226" height="274" alt="Мария Кетова"/>
                   </picture>
                 </div>
                 <h3 class="coaches__h3">Мария Кетова</h3>
@@ -468,28 +473,28 @@
                 <p>Современные тренажеры на все группы мышц</p>
               </li>
               <li class="advantages__item">
-                <div class="advantages__images"><!-- 1х: 108px; 2x: 216px --><img src="img/900.png" srcset="img/900@2x.png 2x" width="108" height="75" alt="Площадь 900 кв/м"/><!-- 1х: 89px; 2x: 178px --><img src="img/900-tablet.png" srcset="img/900-tablet@2x.png 2x" width="89" height="63" alt="Площадь 900 кв/м"/><!-- 1х: 89px; 2x: 178px --><img src="img/900-mobile.png" srcset="img/900-mobile@2x.png 2x" width="89" height="63" alt="Площадь 900 кв/м"/></div>
+                <div class="advantages__images"><!-- 1х: 108px; 2x: 216px --><img class="lazyload" data-src="img/900.png" data-srcset="img/900@2x.png 2x" width="108" height="75" alt="Площадь 900 кв/м"/><!-- 1х: 89px; 2x: 178px --><img class="lazyload" data-src="img/900-tablet.png" data-srcset="img/900-tablet@2x.png 2x" width="89" height="63" alt="Площадь 900 кв/м"/><!-- 1х: 89px; 2x: 178px --><img class="lazyload" data-src="img/900-mobile.png" data-srcset="img/900-mobile@2x.png 2x" width="89" height="63" alt="Площадь 900 кв/м"/></div>
                 <div class="advantages__text advantages__text--900">
                   <h3>Площадь</h3>
                   <p>Занимайтесь без очередей и толпучки</p>
                 </div>
               </li>
               <li class="advantages__item">
-                <div class="advantages__images"><!-- 1х: 72px; 2x: 144px --><img src="img/70.png" srcset="img/70@2x.png 2x" width="72" height="75" alt="Собственная парковка на 70 машин"/><!-- 1х: 59px; 2x: 118px --><img src="img/70-tablet.png" srcset="img/70-tablet@2x.png 2x" width="59" height="63" alt="Собственная парковка на 70 машин"/><!-- 1х: 59px; 2x: 118px --><img src="img/70-mobile.png" srcset="img/70-mobile@2x.png 2x" width="59" height="63" alt="Собственная парковка на 70 машин"/></div>
+                <div class="advantages__images"><!-- 1х: 72px; 2x: 144px --><img class="lazyload" data-src="img/70.png" data-srcset="img/70@2x.png 2x" width="72" height="75" alt="Собственная парковка на 70 машин"/><!-- 1х: 59px; 2x: 118px --><img class="lazyload" data-src="img/70-tablet.png" data-srcset="img/70-tablet@2x.png 2x" width="59" height="63" alt="Собственная парковка на 70 машин"/><!-- 1х: 59px; 2x: 118px --><img class="lazyload" data-src="img/70-mobile.png" data-srcset="img/70-mobile@2x.png 2x" width="59" height="63" alt="Собственная парковка на 70 машин"/></div>
                 <div class="advantages__text">
                   <h3>Собственная парковка</h3>
                   <p>Вы всегда найдете место для своей машины на нашей парковке</p>
                 </div>
               </li>
               <li class="advantages__item advantages__item--350">
-                <div class="advantages__images"><!-- 1х: 108px; 2x: 216px --><img src="img/350.png" srcset="img/350@2x.png 2x" width="108" height="75" alt="350 мест в зале"/><!-- 1х: 89px; 2x: 178px --><img src="img/350-tablet.png" srcset="img/350-tablet@2x.png 2x" width="89" height="63" alt="350 мест в зале"/><!-- 1х: 89px; 2x: 178px --><img src="img/350-mobile.png" srcset="img/350-mobile@2x.png 2x" width="89" height="63" alt="350 мест в зале"/></div>
+                <div class="advantages__images"><!-- 1х: 108px; 2x: 216px --><img class="lazyload" data-src="img/350.png" data-srcset="img/350@2x.png 2x" width="108" height="75" alt="350 мест в зале"/><!-- 1х: 89px; 2x: 178px --><img class="lazyload" data-src="img/350-tablet.png" data-srcset="img/350-tablet@2x.png 2x" width="89" height="63" alt="350 мест в зале"/><!-- 1х: 89px; 2x: 178px --><img class="lazyload" data-src="img/350-mobile.png" data-srcset="img/350-mobile@2x.png 2x" width="89" height="63" alt="350 мест в зале"/></div>
                 <div class="advantages__text">
                   <h3>Комфорт</h3>
                   <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
                 </div>
               </li>
               <li class="advantages__item">
-                <div class="advantages__images"><!-- 1х: 70px; 2x: 140px --><img src="img/5.png" srcset="img/5@2x.png 2x" width="70" height="75" alt="Тренерский опыт больше 5 лет"/><!-- 1х: 57px; 2x: 114px --><img src="img/5-tablet.png" srcset="img/5-tablet@2x.png 2x" width="57" height="63" alt="Тренерский опыт больше 5 лет"/><!-- 1х: 57px; 2x: 114px --><img src="img/5-mobile.png" srcset="img/5-mobile@2x.png 2x" width="57" height="63" alt="Тренерский опыт больше 5 лет"/></div>
+                <div class="advantages__images"><!-- 1х: 70px; 2x: 140px --><img class="lazyload" data-src="img/5.png" data-srcset="img/5@2x.png 2x" width="70" height="75" alt="Тренерский опыт больше 5 лет"/><!-- 1х: 57px; 2x: 114px --><img class="lazyload" data-src="img/5-tablet.png" data-srcset="img/5-tablet@2x.png 2x" width="57" height="63" alt="Тренерский опыт больше 5 лет"/><!-- 1х: 57px; 2x: 114px --><img class="lazyload" data-src="img/5-mobile.png" data-srcset="img/5-mobile@2x.png 2x" width="57" height="63" alt="Тренерский опыт больше 5 лет"/></div>
                 <div class="advantages__text">
                   <h3>Тренерский опыт</h3>
                   <p>Добивайтесь своих целей быстрее с профессиональным тренером</p>
@@ -510,17 +515,17 @@
                 </div>
                 <div class="promo-actions__img promo-actions__img--desktop"><!-- 1х: 280px; 2x: 560px -->
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="img/action-img-desktop.webp 1x, img/action-img-desktop@2x.webp 2x" type="image/webp"/><img src="img/action-img-desktop.png" srcset="img/action-img-desktop@2x.png 2x" width="280" height="462" alt="Акция"/>
+                    <source media="(min-width: 1200px)" data-srcset="img/action-img-desktop.webp 1x, img/action-img-desktop@2x.webp 2x" type="image/webp"/><img class="lazyload" data-src="img/action-img-desktop.jpg" data-srcset="img/action-img-desktop@2x.jpg 2x" width="280" height="462" alt="Акция"/>
                   </picture>
                 </div>
                 <div class="promo-actions__img promo-actions__img--tablet"><!-- 1х: 399px; 2x: 798px -->
                   <picture>
-                    <source media="(min-width: 768px)" srcset="img/action-img-tablet.webp 1x, img/action-img-tablet@2x.webp 2x" type="image/webp"/><img src="img/action-img-tablet.png" srcset="img/action-img-tablet@2x.png 2x" width="399" height="462" alt="Акция"/>
+                    <source media="(min-width: 768px)" data-srcset="img/action-img-tablet.webp 1x, img/action-img-tablet@2x.webp 2x" type="image/webp"/><img class="lazyload" data-src="img/action-img-tablet.jpg" data-srcset="img/action-img-tablet@2x.jpg 2x" width="399" height="462" alt="Акция"/>
                   </picture>
                 </div>
                 <div class="promo-actions__img promo-actions__img--mobile"><!-- 1х: 290px; 2x: 580px -->
                   <picture>
-                    <source media="(min-width: 320px)" srcset="img/action-img-mobile.webp 1x, img/action-img-mobile@2x.webp 2x" type="image/webp"/><img src="img/action-img-mobile.png" srcset="img/action-img-mobile@2x.png 2x" width="290" height="299" alt="Акция"/>
+                    <source media="(min-width: 320px)" data-srcset="img/action-img-mobile.webp 1x, img/action-img-mobile@2x.webp 2x" type="image/webp"/><img class="lazyload" data-src="img/action-img-mobile.jpg" data-srcset="img/action-img-mobile@2x.jpg 2x" width="290" height="299" alt="Акция"/>
                   </picture>
                 </div>
               </div>
@@ -545,21 +550,21 @@
               <button class="reviews__button reviews__button--right" type="button" aria-label="Следующий отзыв"></button>
               <ul class="reviews__slider">
                 <li class="reviews__slide">
-                  <div class="reviews__img"><!-- 1х: 80px; 2x: 160px --><img src="img/avatar.png" srcset="img/avatar@2x.png 2x" width="80" height="80" alt="Анна Орлова"/></div>
+                  <div class="reviews__img"><!-- 1х: 80px; 2x: 160px --><img class="lazyload" data-src="img/avatar.png" data-srcset="img/avatar@2x.png 2x" width="80" height="80" alt="Анна Орлова"/></div>
                   <div class="reviews__text">
                     <h3>Анна Орлова</h3>
                     <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
                   </div>
                 </li>
                 <li class="reviews__slide">
-                  <div class="reviews__img"><!-- 1х: 80px; 2x: 160px --><img src="img/avatar.png" srcset="img/avatar@2x.png 2x" width="80" height="80" alt="Дед Мороз"/></div>
+                  <div class="reviews__img"><!-- 1х: 80px; 2x: 160px --><img class="lazyload" data-src="img/avatar.png" data-srcset="img/avatar@2x.png 2x" width="80" height="80" alt="Дед Мороз"/></div>
                   <div class="reviews__text">
                     <h3>Дед Мороз</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, voluptates voluptatibus. Eaque tempore voluptatibus possimus fugit impedit vel tempora excepturi labore recusandae et, inventore soluta sequi commodi libero consequuntur atque.</p>
                   </div>
                 </li>
                 <li class="reviews__slide">
-                  <div class="reviews__img"><!-- 1х: 80px; 2x: 160px --><img src="img/avatar.png" srcset="img/avatar@2x.png 2x" width="80" height="80" alt="Иван Иванов"/></div>
+                  <div class="reviews__img"><!-- 1х: 80px; 2x: 160px --><img class="lazyload" data-src="img/avatar.png" data-srcset="img/avatar@2x.png 2x" width="80" height="80" alt="Иван Иванов"/></div>
                   <div class="reviews__text">
                     <h3>Иван Иванов</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa odio facilis itaque! Incidunt facilis provident reiciendis neque, veritatis atque commodi ducimus cum id, repellat ipsam dignissimos, expedita officiis ipsum debitis.</p>
@@ -615,7 +620,7 @@
       </main>
       <footer class="footer">
         <div class="container"><a class="footer__logo" aria-label="Перейти на главную страницу">
-            <svg class="header__logo" width="87" height="20">
+            <svg width="87" height="20">
               <use xlink:href="#logo"></use>
             </svg></a>
           <ul class="footer__nav-list">
