@@ -37,7 +37,7 @@
                   <li>Групповые занятия</li>
                   <li>Кардио-зона</li>
                 </ul>
-              </div><a class="main__buy">Купить абонемент</a>
+              </div><a class="main__buy" href="#season">Купить абонемент</a>
             </div>
             <div class="main__img main__img--desktop"><!-- 1х: 508px; 2x: 1016px -->
               <picture>
@@ -102,7 +102,7 @@
             </div>
           </div>
         </section>
-        <section class="season">
+        <section class="season" id="season">
           <div class="season__barbells season__barbells--desktop">
             <picture>
               <source media="(min-width: 1200px)" data-srcset="img/barbells-desktop.webp 1x, img/barbells-desktop@2x.webp 2x" type="image/webp"/><img class="lazyload" data-src="img/barbells-desktop.png" data-srcset="img/barbells-desktop@2x.png 2x" width="287" height="494" alt="Блины для штанги"/>
@@ -619,8 +619,8 @@
         </section>
       </main>
       <footer class="footer">
-        <div class="container"><a class="footer__logo" aria-label="Перейти на главную страницу">
-            <svg width="87" height="20">
+        <div class="container"><a aria-label="Перейти на главную страницу">
+            <svg class="footer__logo" width="87" height="20">
               <use xlink:href="#logo"></use>
             </svg></a>
           <ul class="footer__nav-list">

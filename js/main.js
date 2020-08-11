@@ -20,9 +20,17 @@
 
   var sliderPagination = function sliderPagination(cond, exp) {
     if (cond) {
-      for (var i = slideIndex; i < slideLength; i++) {
+      var _loop = function _loop(i) {
+        slides[i + exp].style.opacity = 0;
         slides[i].classList.remove("coaches__slider-item--active");
         slides[i + exp].classList.add("coaches__slider-item--active");
+        setTimeout(function () {
+          slides[i + exp].style.opacity = 1;
+        }, 100);
+      };
+
+      for (var i = slideIndex; i < slideLength; i++) {
+        _loop(i);
       }
 
       slideLength = slideLength + exp;
@@ -128,9 +136,17 @@
 
   var sliderPagination = function sliderPagination(cond, exp) {
     if (cond) {
-      for (var i = slideIndex; i < slideLength; i++) {
+      var _loop2 = function _loop2(i) {
+        slides[i + exp].style.opacity = 0;
         slides[i].classList.remove("reviews__slide--active");
         slides[i + exp].classList.add("reviews__slide--active");
+        setTimeout(function () {
+          slides[i + exp].style.opacity = 1;
+        }, 100);
+      };
+
+      for (var i = slideIndex; i < slideLength; i++) {
+        _loop2(i);
       }
 
       slideLength = slideLength + exp;
@@ -202,7 +218,7 @@
 
 (function () {
   var NUMBER_LENGTH = 11;
-  var REGEX_NAME = /^[A-ZА-Я][a-za-я]+\s([A-ZА-Я][a-za-я]+\s[A-ZА-Я][a-za-я]+|[A-ZА-Я][a-za-я]+)/;
+  var REGEX_NAME = /(^[A-ZА-Я][а-яa-z]+$|^[A-ZА-Я][а-яa-z]+\s[A-ZА-Я][а-яa-z]+$|^[A-ZА-Я][а-яa-z]+\s[A-ZА-Я][а-яa-z]+\s[A-ZА-Я][а-яa-z]+$)/;
   var form = document.querySelector(".contacts__form");
   var inputTel = document.getElementById("tel");
   var inputName = document.getElementById("name");
